@@ -39,17 +39,21 @@ If we click on the result, we see the following page:
 We can click directly on the `FASTQ files (FTP)` to download them to our computer.
 Alternative, we can copy the links and use these to download the files to a remote computer like Farm.
 
-Before we download these files, let's set up a directory structure that will help us stay organized.
+Before we download these files, let's set up a directory structure that will help us stay organized. We change directory with `cd` and make new directory with `mkdir`.
 
+First, go to home directory, make a new directory named "2020_rotation_project"
 ```
 cd ~
 mkdir 2020_rotation_project
+```
+Inside "2020_rotation_project", make a directory named "raw_data" 
+
+```
 cd 2020_rotation_project
 mkdir raw_data
 cd raw_data
 ```
-
-Then, we can download the data into our `raw_data` directory.
+Then, we can download the data into our `raw_data` directory. Download file from internet with `wget`, which stands for "web get".
 
 ```
 wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR197/008/SRR1976948/SRR1976948_1.fastq.gz
